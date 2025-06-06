@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Travel App API (Vercel)
 
 This is a simple serverless API endpoint built for a Travel App to receive geolocation data.
@@ -24,3 +25,7 @@ This is a simple serverless API endpoint built for a Travel App to receive geolo
   }
 }
 ```
+=======
+# travel-app-api
+Uni Assessment
+>>>>>>> ee2d9954e60cba160fa81cbcd5a337b5a59d3289
