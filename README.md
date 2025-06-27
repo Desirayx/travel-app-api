@@ -15,7 +15,7 @@ This is a simple serverless API endpoint built for a Travel App to receive geolo
    https://your-vercel-project.vercel.app/api/location
    ```
 
-## 🧪 Example Payload
+## 🧪 Example
 ```json
 {
   "timestamp": "2025-06-06T10:00:00Z",
