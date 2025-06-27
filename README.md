@@ -39,7 +39,39 @@ git clone https://github.com/Desirayx/travel-app-api.git
 cd travel-app-api
 npm install
 npx expo start
-
+```
 ## Backend API
-
 The backend receives and stores GPS and photo data.
+### Endpoint:
+
+```http
+POST /api/location
+```
+### Body Example:
+
+```json
+{
+  "timestamp": "2024-06-06T12:00:00.000Z",
+  "coords": {
+    "latitude": 51.509865,
+    "longitude": -0.118092
+  },
+  "photoBase64": "..."
+}
+```
+Hosted at: https://travel-app-api-three.vercel.app/api/location
+
+## 📱 App Usage
+- Press "Send Now" to manually send current location.
+- Press "Open Camera" to take a photo.
+- View location/photo history below with timestamps.
+- If offline, SMS is used automatically to send the location.
+
+##  📁 Project Structure
+
+```go
+📂 travel-app/
+├── App.js
+├── assets/
+├── package.json
+└── ...
