@@ -1,11 +1,11 @@
 <<<<<<< HEAD
 # Travel App API (Vercel)
 
-This is a simple serverless API endpoint built for a Travel App to receive geolocation data.
+This is a simple serverless API endpoint built for a Travel App to receive geolocation and camera data.
 
 ## 📦 Features
 - Accepts POST requests with GPS coordinates and timestamp
-- Logs data (can be extended to store in Firebase or Supabase)
+- Logs data
 
 ## 🚀 Deploy with Vercel
 1. Push this folder to GitHub
