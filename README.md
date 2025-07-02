@@ -137,11 +137,9 @@ This repo contains both backend (API) and frontend (Expo app):
 ```go
 📂 travel-app/
 ├── api/                 # Express backend API (deployed to Vercel)
-│   └── location.js      # Handles POST requests from app
+│   └── location.js     
 ├── client/              # React Native frontend app (runs on Expo)
 │   ├── App.js
 │   ├── components/
 │   └── ...
-├── README.md            # Project documentation
-├── package.json         # Backend dependencies
-└── vercel.json          # Configuration for Vercel deployment
+└── README.md            # Project documentation
