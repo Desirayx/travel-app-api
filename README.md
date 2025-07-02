@@ -38,6 +38,7 @@ Make sure you have these installed on your computer:
 - Android: Google Play Store – Expo Go  Download from: https://play.google.com/store/apps/details?id=host.exp.exponent
 - iPhone: App Store – Expo Go  Download from: https://apps.apple.com/us/app/expo-go/id982107779
 - link to the expo code https://snack.expo.dev/@desirayx/assessment
+- Vercel link https://vercel.com/desirayxs-projects/travel-app-api
 #### 2. Clone the Repository
 Open your terminal and run:
 ```bash
