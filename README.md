@@ -136,7 +136,6 @@ Hosted at: https://travel-app-api-three.vercel.app/api/location
 
 ```go
 📂 travel-app/
-├── App.js
-├── assets/
-├── package.json
-└── ...
+├── api/ → Express backend API (hosted on Vercel)
+├── client/ → React Native front-end app (runs on Expo)
+└── README.md
