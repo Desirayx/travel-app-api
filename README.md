@@ -133,9 +133,15 @@ POST /api/location
 Hosted at: https://travel-app-api-three.vercel.app/api/location
 
 ##  📁 Project Structure
-
+This repo contains both backend (API) and frontend (Expo app):
 ```go
 📂 travel-app/
-├── api/ → Express backend API (hosted on Vercel)
-├── client/ → React Native front-end app (runs on Expo)
-└── README.md
+├── api/                 # Express backend API (deployed to Vercel)
+│   └── location.js      # Handles POST requests from app
+├── client/              # React Native frontend app (runs on Expo)
+│   ├── App.js
+│   ├── components/
+│   └── ...
+├── README.md            # Project documentation
+├── package.json         # Backend dependencies
+└── vercel.json          # Configuration for Vercel deployment
