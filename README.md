@@ -55,12 +55,12 @@ npm install
 This installs all necessary libraries the app needs.
 
 #### 4. Start the App
-Start the local Expo development server:
+To run the mobile app:
 ```bash
+cd client
+npm install
 npx expo start
 ```
-This will open a new window in your browser and show you a QR code.
-
 #### 5. Run the App on Your Phone
 Open the Expo Go app on your phone.
 
