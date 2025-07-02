@@ -37,7 +37,7 @@ Make sure you have these installed on your computer:
 - Expo Go App (on your phone) – Lets you preview the app easily.
 - Android: Google Play Store – Expo Go  Download from: https://play.google.com/store/apps/details?id=host.exp.exponent
 - iPhone: App Store – Expo Go  Download from: https://apps.apple.com/us/app/expo-go/id982107779
-
+- link to the expo code https://snack.expo.dev/@desirayx/assessment
 #### 2. Clone the Repository
 Open your terminal and run:
 ```bash
