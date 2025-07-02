@@ -1,6 +1,14 @@
 # Travel App Tracker
 
-React Native app for traveling and sending recurring geolocation data to a monitoring server via web API or SMS (fallback when offline). Works in low-signal areas. Geofencing. Picture taking with auto-stamping with timestamp and GPS location data. Offline-first capabilities.
+A React Native mobile app for travellers that sends recurring geolocation data to a monitoring system via web API or SMS (offline fallback). Works reliably in low-signal areas. Features geofencing, photo capture with timestamp and GPS tagging, and persistent offline storage.
+
+## 📖 Table of Contents
+- [📦 Features](#-features)
+- [🧪 Technologies Used](#-technologies-used)
+- [🚀 Getting Started](#-getting-started)
+- [📱 App Usage](#-app-usage)
+- [🌐 Backend API](#-backend-api)
+- [📁 Project Structure](#-project-structure)
 
 ## 📦 Features
 
@@ -21,44 +29,44 @@ React Native app for traveling and sending recurring geolocation data to a monit
 - `expo-sms`
 - `expo-network`
 - `@react-native-async-storage/async-storage`
-- Express.js (backend API)
-- Vercel (hosting backend API)
+
+**Backend**
+- Serverless function (`api/location.js`) deployed on **Vercel**
 
 ## 🚀 Getting Started
 
 ### 🔧 Installation and Setup
-To get the app running on your own device, follow these steps:
+
+To run the app locally on your device:
 
 #### 1. Install Required Tools
-Make sure you have these installed on your computer:
 
-- Node.js – This lets you run JavaScript tools. Download from: https://nodejs.org
-- Git – Used to download (clone) the project code. Download from: https://git-scm.com
-- Expo Go App (on your phone) – Lets you preview the app easily.
-- Android: Google Play Store – Expo Go  Download from: https://play.google.com/store/apps/details?id=host.exp.exponent
-- iPhone: App Store – Expo Go  Download from: https://apps.apple.com/us/app/expo-go/id982107779
-- link to the expo code https://snack.expo.dev/@desirayx/assessment
-- Vercel link https://vercel.com/desirayxs-projects/travel-app-api
+Make sure you have the following:
+
+- [Node.js](https://nodejs.org)
+- [Git](https://git-scm.com)
+- Expo Go App on your mobile:
+  - [Android (Play Store)](https://play.google.com/store/apps/details?id=host.exp.exponent)
+  - [iOS (App Store)](https://apps.apple.com/us/app/expo-go/id982107779)
+
+> 📎 Optionally, preview the app on Expo Snack:  
+> [Expo Snack Project (read-only)](https://snack.expo.dev/@desirayx/assessment)
+
 #### 2. Clone the Repository
-Open your terminal and run:
+
 ```bash
 git clone https://github.com/Desirayx/travel-app-api.git
-cd travel-app-api
+cd travel-app-api/client
 ```
-This copies the app source code to your computer.
 
 #### 3. Install Dependencies
-Inside the project folder, run:
 ```bash
 npm install
 ```
-This installs all necessary libraries the app needs.
 
 #### 4. Start the App
 To run the mobile app:
 ```bash
-cd client
-npm install
 npx expo start
 ```
 #### 5. Run the App on Your Phone
@@ -112,7 +120,7 @@ You can delete all saved locations or photos by pressing:
 The app will ask for confirmation before deleting anything.
 
 ## Backend API
-The backend receives and stores GPS and photo data.
+This app uses a Vercel Serverless Function to receive location/photo data.
 ### Endpoint:
 
 ```http
@@ -133,9 +141,14 @@ POST /api/location
 Hosted at: https://travel-app-api-three.vercel.app/api/location
 
 ##  📁 Project Structure
-
+This repository contains both the mobile app frontend and the backend function.
 ```go
-📂 travel-app/
-├── api/ → Express backend API (hosted on Vercel)
-├── client/ → React Native front-end app (runs on Expo)
-└── README.md
+📂 travel-app-api/
+├── client/               # React Native (Expo) mobile app
+│   ├── App.js
+│   ├── components/
+│   ├── assets/
+│   └── ...
+├── api/                  # Serverless backend (Vercel Function)
+│   └── location.js
+└── README.md             # This documentation
